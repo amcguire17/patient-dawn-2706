@@ -15,12 +15,7 @@ RSpec.describe Competition do
     @competition.teams << @team_1
     @competition.teams << @team_2
   end
-
-  describe 'class methods' do
-    describe '.' do
-    end
-  end
-
+  
   describe 'instance methods' do
     describe '#average_age_players' do
       it 'can return the average age of players in competition across teams' do
