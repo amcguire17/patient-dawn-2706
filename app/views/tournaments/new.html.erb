@@ -1,0 +1,9 @@
+<h2>New Competition Team  </h2>
+
+<%= form_with url: "/competitions/#{@competition.id}/teams", method: :post, local: true do |form| %>
+  <%= form.label :hometown, 'Hometown:'%>
+  <%= form.text_field :hometown %>
+  <%= form.label :nickname, 'Nickname:' %>
+  <%= form.text_field :nickname %>
+  <%= form.submit 'Register Team' %>
+<% end %>
