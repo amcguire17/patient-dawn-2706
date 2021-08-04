@@ -31,7 +31,6 @@ RSpec.describe 'Teams Index page' do
     expect(@team_2.nickname).to appear_before(@team_3.nickname)
     expect(@team_3.nickname).to appear_before(@team_4.nickname)
     expect(@team_4.nickname).to appear_before(@team_1.nickname)
-    save_and_open_page
 
      within("#team-#{@team_1.id}") do
       expect(page).to have_content("Players Average Age: 25.5")
